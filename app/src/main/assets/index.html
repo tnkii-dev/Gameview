@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>webview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function onBackPressed() {
+            Android.showToast('Back');
+        }
+    </script>
+    <style>
+        body { margin: 0; }
+        span { color: #f42069; }
+        img { max-width: 100vw; }
+        button {
+            font-size: 3rem;
+            background-color: #666;
+            border: 3px outset #000;
+        }
+        button:active {
+            font-size: 3rem;
+            background-color: #333;
+            border: 3px inset #000;
+        }
+    </style>
+</head>
+<body>
+    <span>Te amo, Yuna!</span>
+    <img src="yuna.jpg" alt="Cute Girl">
+    <button onclick="Android.showToast('Test');">Toast</button>
+    <button onclick="Android.closeGame();">close</button>
+    <label>
+        <input>
+    </label>
+</body>
+</html>
