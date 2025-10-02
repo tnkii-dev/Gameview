@@ -1,12 +1,12 @@
 # Gameview
-Android Studio template for games made with Javascript.
+Plantilla de Android Studio para juegos hechos con Javascript.
 
 ## Info:
 
 Esta plantilla te permite convertir tu juego HTML5 en una aplicación Android de manera sencilla.
 Originalmente creada para compilar juegos creados con el motor de juegos de navegador [**Nekoplay**](https://nekoplay.niupeis.com/wiki/)
 
-## To Do:
+## Tareas:
 
 - [x] Webview
 - [x] Cerrar desde js
@@ -16,7 +16,7 @@ Originalmente creada para compilar juegos creados con el motor de juegos de nave
 - [ ] Notificaciónes
 - [ ] Almacenamiento
 - [ ] Accesos directos
-- [ ] Interfáz de Anuncios
+- [ ] Interfáz de Anuncios (¿?)
 
 ## Tutorial: Uso de la Plantilla Android Studio
 
