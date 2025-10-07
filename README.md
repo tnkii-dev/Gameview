@@ -15,8 +15,8 @@ Originalmente creada para compilar juegos creados con el motor de juegos de nave
 - [x] Boton de volver
 - [x] Toasts
 - [x] Pantalla completa "edge to edge"
-- [ ] Notificaciónes
-- [ ] Almacenamiento
+- [x] Notificaciónes (Beta)
+- [x] Almacenamiento
 - [ ] Accesos directos
 - [ ] Interfáz de Anuncios (¿?)
 
@@ -94,6 +94,22 @@ Android.showToast("¡Hola desde JavaScript!");
 Android.closeGame();
 ```
 
+**Notificaciones**
+```javascript
+Android.requestNotifications() // Pedir permiso de notificaciones
+Android.notification("Title", "Content") // Crear una notificación básica
+```
+
+**Almacenamiento**
+```javascript
+Android.fileSet('filename', 'content') // Guardar archivo
+Android.fileGet('filename') // Leer un archivo
+Android.fileDel('filename') // Eliminar un archivo
+Android.fileExist('filename') // Comprobar si un archivo existe
+Android.fileSize('filename') // Obtener el tamaño del archivo
+Android.fileList() // Lista de todos los archivos
+```
+
 #### Manejar el botón de retroceso
 
 Define la función `onBackPressed` en tu código JavaScript para controlar qué sucede cuando el usuario presiona el botón de retroceso:
@@ -131,8 +147,8 @@ Originally created to compile games made with the [**Nekoplay**](https://nekopla
 - [x] Back button
 - [x] Toasts
 - [x] Fullscreen "edge to edge"
-- [ ] Notifications
-- [ ] Storage
+- [x] Notifications (Beta)
+- [x] Storage
 - [ ] Shortcuts
 - [ ] Ads Interface (?)
 
@@ -210,6 +226,22 @@ Android.showToast("Hello from JavaScript!");
 Android.closeGame();
 ```
 
+**Notifications**
+```javascript
+Android.requestNotifications() // Request notification permission
+Android.notification("Title", "Content") // Create a basic notification
+```
+
+**Storage**
+```javascript
+Android.fileSet('filename', 'content') // Save file
+Android.fileGet('filename') // Read a file
+Android.fileDel('filename') // Delete a file
+Android.fileExist('filename') // Check if a file exists
+Android.fileSize('filename') // Get file size
+Android.fileList() // List all files
+```
+
 #### Handle the Back Button
 
 Define the `onBackPressed` function in your JavaScript code to control what happens when the user presses the back button:
@@ -247,8 +279,8 @@ Android Studio テンプレート：Javascript で作成されたゲーム用
 - [x] 戻るボタン
 - [x] トースト
 - [x] 全画面表示 "edge to edge"
-- [ ] 通知
-- [ ] ストレージ
+- [x] 通知 (Beta)
+- [x] ストレージ
 - [ ] ショートカット
 - [ ] 広告インターフェース (?)
 
@@ -326,6 +358,22 @@ Android.showToast("JavaScript からこんにちは！");
 Android.closeGame();
 ```
 
+**通知**
+```javascript
+Android.requestNotifications() // 通知の許可をリクエスト
+Android.notification("タイトル", "内容") // 基本通知を作成
+```
+
+**ストレージ**
+```javascript
+Android.fileSet('filename', 'content') // ファイルを保存
+Android.fileGet('filename') // ファイルを読み取り
+Android.fileDel('filename') // ファイルを削除
+Android.fileExist('filename') // ファイルの存在を確認
+Android.fileSize('filename') // ファイルサイズを取得
+Android.fileList() // すべてのファイルを一覧表示
+```
+
 #### 戻るボタンの処理
 
 ユーザーが戻るボタンを押したときの動作を制御するために、JavaScript コード内で `onBackPressed` 関数を定義します:
@@ -363,8 +411,8 @@ Android Studio 템플릿: JavaScript로 만든 게임용
 - [x] 뒤로 가기 버튼
 - [x] 토스트 메시지
 - [x] 전체 화면 "edge to edge"
-- [ ] 알림
-- [ ] 저장소
+- [x] 알림 (Beta)
+- [x] 저장소
 - [ ] 바로가기
 - [ ] 광고 인터페이스 (?)
 
@@ -442,6 +490,22 @@ Android.showToast("JavaScript에서 안녕하세요!");
 Android.closeGame();
 ```
 
+**알림**
+```javascript
+Android.requestNotifications() // 알림 권한 요청
+Android.notification("제목", "내용") // 기본 알림 생성
+```
+
+**저장소**
+```javascript
+Android.fileSet('filename', 'content') // 파일 저장
+Android.fileGet('filename') // 파일 읽기
+Android.fileDel('filename') // 파일 삭제
+Android.fileExist('filename') // 파일 존재 여부 확인
+Android.fileSize('filename') // 파일 크기 가져오기
+Android.fileList() // 모든 파일 목록
+```
+
 #### 뒤로 가기 버튼 처리
 
 사용자가 뒤로 가기 버튼을 눌렀을 때 발생하는 상황을 제어하려면 JavaScript 코드에서 `onBackPressed` 함수를 정의하세요:
@@ -479,8 +543,8 @@ Android Studio 模板：用于 JavaScript 制作的游戏
 - [x] 返回按钮
 - [x] 吐司提示
 - [x] 全面屏 "edge to edge"
-- [ ] 通知
-- [ ] 存储
+- [x] 通知 (Beta)
+- [x] 存储
 - [ ] 快捷方式
 - [ ] 广告接口 (?)
 
@@ -556,6 +620,22 @@ Android.showToast("来自 JavaScript 的问候！");
 **关闭应用程序：**
 ```javascript
 Android.closeGame();
+```
+
+**通知**
+```javascript
+Android.requestNotifications() // 请求通知权限
+Android.notification("标题", "内容") // 创建基本通知
+```
+
+**存储**
+```javascript
+Android.fileSet('filename', 'content') // 保存文件
+Android.fileGet('filename') // 读取文件
+Android.fileDel('filename') // 删除文件
+Android.fileExist('filename') // 检查文件是否存在
+Android.fileSize('filename') // 获取文件大小
+Android.fileList() // 所有文件列表
 ```
 
 #### 处理返回按钮

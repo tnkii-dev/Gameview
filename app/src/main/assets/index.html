@@ -4,34 +4,37 @@
     <title>webview</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function onBackPressed() {
-            Android.showToast('Back');
-        }
-    </script>
-    <style>
-        body { margin: 0; }
-        span { color: #f42069; }
-        img { max-width: 100vw; }
-        button {
-            font-size: 3rem;
-            background-color: #666;
-            border: 3px outset #000;
-        }
-        button:active {
-            font-size: 3rem;
-            background-color: #333;
-            border: 3px inset #000;
-        }
-    </style>
+    <style>body { color: #fff; background-color: #000; }
+    .lnk { color: #f42069; text-decoration: none; }
+    pre { padding: 1rem; max-width: 400px; background-color: #222; overflow: auto;}
+    * { scrollbar-width: none; } </style>
 </head>
 <body>
-    <span>Te amo, Yuna!</span>
-    <img src="yuna.jpg" alt="Cute Girl">
-    <button onclick="Android.showToast('Test');">Toast</button>
-    <button onclick="Android.closeGame();">close</button>
-    <label>
-        <input>
-    </label>
+    <span>You can use these functions on your project.</span>
+
+    <pre><code>Android.closeGame() // Closes the app
+
+Android.showToast("Hello!") // Displays a toast
+
+Android.fileSet('filename', 'content') // Save a file
+Android.fileGet('filename') // Read a file
+Android.fileDel('filename') // Delete a file
+Android.fileExist('filename') // Test if a file exists
+Android.fileSize('filename') // The file's size
+Android.fileList() // List all the files
+
+Android.requestNotifications() // Request permission to use notifications
+Android.notification("Title", "Content") // Create a basic notification</code></pre>
+
+    <span>And declare this function to handle the back event</span>
+
+    <pre><code>function onBackPressed() {
+    // Define what happens here
+}</code></pre>
+
+    <div style="position: fixed; bottom: 0; right: 0;">
+        <p>Check my stuff on <span class="lnk">niupleis.com</span></p>
+        <img src="girl.png">
+    </div>
 </body>
 </html>
